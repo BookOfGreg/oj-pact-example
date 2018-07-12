@@ -1,0 +1,41 @@
+{
+  "consumer": {
+    "name": "my_client"
+  },
+  "provider": {
+    "name": "My Service"
+  },
+  "interactions": [
+    {
+      "description": "an id",
+      "providerState": "there is request",
+      "request": {
+        "method": "get",
+        "path": "/anywhere",
+        "query": "",
+        "headers": {
+          "Content-Type": "application/json",
+          "Accept-Encoding": "gzip,deflate"
+        },
+        "body": null
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "object": {
+            "json_class": "Pact::SomethingLike",
+            "contents": "hi"
+          }
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}
